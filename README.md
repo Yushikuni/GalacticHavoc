@@ -4,7 +4,7 @@ Todo:
 
 [ ] Space level
 
-[x] Warning screen
+- [x] Warning screen
 
 ( ) intro
 
