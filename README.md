@@ -2,9 +2,9 @@
 
 Todo:
 
-( ) Space level
+[ ] Space level
 
-(X) Warning screen
+[x] Warning screen
 
 ( ) intro
 
