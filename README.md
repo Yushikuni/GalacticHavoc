@@ -2,12 +2,8 @@
 
 Todo:
 
-[ ] Space level
-
+- [ ] Space level
 - [x] Warning screen
-
-( ) intro
-
-( ) play in file
-
-( ) do not use a LFS
+- [ ] intro
+- [ ] play in file
+- [ ] do not use a LFS
