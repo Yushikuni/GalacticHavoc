@@ -16,7 +16,6 @@ UTunnelComponent::UTunnelComponent()
 	// ...
 }
 
-
 // Called when the game starts
 void UTunnelComponent::BeginPlay()
 {
@@ -25,7 +24,6 @@ void UTunnelComponent::BeginPlay()
 	// ...
 	
 }
-
 
 // Called every frame
 void UTunnelComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
