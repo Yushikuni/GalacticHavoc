@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/SplineComponent.h"
 #include "MakingTunel.generated.h"
 
 UCLASS()
@@ -22,5 +24,12 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+protected:
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* TunnelMesh;
+
+	UPROPERTY(VisibleAnywhere)
+	USplineComponent* TunnelSpline;
 
 };
