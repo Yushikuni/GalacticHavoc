@@ -4,7 +4,7 @@ Todo:
 
 - [ ] Space level
 - [x] Warning screen
-- [ ] intro
+- [x] intro
 - [ ] play in file
 - [ ] do not use a LFS
 - [ ] Player as a SpaceShip
