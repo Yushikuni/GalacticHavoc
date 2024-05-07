@@ -25,3 +25,18 @@ void AMakingTunel::Tick(float DeltaTime)
 
 }
 
+void AMakingTunel::GenerateTunnel()
+{
+    // Nastavte základní geometrii, napøíklad válec
+    UStaticMesh* CylinderMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Cylinder.Cylinder"));
+
+    if (CylinderMesh)
+    {
+        UStaticMeshComponent* TunnelMeshComponent = NewObject<UStaticMeshComponent>(this);
+        TunnelMeshComponent->SetStaticMesh(CylinderMesh);
+        TunnelMeshComponent->AttachToComponent(this, FAttachmentTransformRules::KeepRelativeTransform);
+
+        // Nastavte velikost a pozici tunelu
+        TunnelMeshComponent->SetWorldScale3D(FVector(3, 3, 10)); // Rozšiøte válec do tvaru tunelu
+    }
+}
