@@ -4,6 +4,7 @@
 #include "BaseMenuWidget.h"
 #include "Kismet/GameplayStatics.h"
 #include "Blueprint/WidgetTree.h"
+#include "Blueprint/UserWidget.h"
 #include "Components/Overlay.h"
 #include "Components/Border.h"
 #include "Components/HorizontalBox.h"

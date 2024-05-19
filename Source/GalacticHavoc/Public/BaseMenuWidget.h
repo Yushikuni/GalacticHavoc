@@ -15,6 +15,7 @@ class GALACTICHAVOC_API UBaseMenuWidget : public UUserWidget
 	GENERATED_BODY()
 
 public:
+
 	UFUNCTION(BlueprintCallable, Category = "Menu")
 	void OpenMenu();
 
