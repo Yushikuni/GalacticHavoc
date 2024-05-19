@@ -79,3 +79,4 @@ Plugins/*
 Content/*
 Assets/*
 *.uproject
+/STL modely.txt
