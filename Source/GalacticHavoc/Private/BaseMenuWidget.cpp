@@ -24,3 +24,6 @@ void UBaseMenuWidget::NativeConstruct()
 	Super::NativeConstruct();
 	InitializeMenu();
 }
+void UBaseMenuWidget::InitializeMenu()
+{
+}
