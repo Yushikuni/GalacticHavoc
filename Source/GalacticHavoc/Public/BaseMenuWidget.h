@@ -28,4 +28,17 @@ public:
 
 protected:
 	virtual void NativeConstruct() override;
+
+private:
+	UPROPERTY(meta = (BindWidget))
+	class UOverlay* Overlay;
+	
+	UPROPERTY(meta = (BindWidget))
+	class UBorder* Border;
+	
+	UPROPERTY(meta = (BindWidget))
+	class UHorizontalBox* HorizontalBox;
+
+	UPROPERTY(meta = (BindWidget))
+	class UVerticalBox* VerticalBox;
 };
