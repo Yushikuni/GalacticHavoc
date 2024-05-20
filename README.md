@@ -4,8 +4,9 @@ Todo:
 
 - [ ] Space level
 - [x] Warning screen
-- [x] intro
-- [ ] play in file
-- [x] do not use a LFS
+- [x] Intro
+- [ ] Play in file
+- [x] Do not use a LFS
 - [ ] Player as a SpaceShip
-- [ ] generate tunnels by procedure
+- [ ] Generate tunnels by procedure
+- [ ] Add a backend for player scores
