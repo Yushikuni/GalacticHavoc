@@ -1,13 +1,13 @@
 # GalacticHavoc
 ### TODO List
 
--   [x]  Update course description.
--   [x]  Update course schedule.
--   [x]  Add game project specifications (rolling ball collecting coins).
--   [x]  Add a mechanic to change the ball into a spaceship.
--   [x]  Design a new level inspired by the movie Interstellar.
--   [x]  Include technical details and requirements.
--   [x]  Add testing and distribution plan.
+-   [ ]  Update course description.
+-   [ ]  Update course schedule.
+-   [ ]  Add game project specifications (rolling ball collecting coins).
+-   [ ]  Add a mechanic to change the ball into a spaceship.
+-   [ ]  Design a new level inspired by the movie Interstellar.
+-   [ ]  Include technical details and requirements.
+-   [ ]  Add testing and distribution plan.
 
 * * * * *
 
