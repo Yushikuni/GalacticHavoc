@@ -6,6 +6,10 @@
 -   [ ]  Add game project specifications (rolling ball collecting coins).
 -   [ ]  Add a mechanic to change the ball into a spaceship.
 -   [ ]  Design a new level inspired by the movie Interstellar.
+-   [X]      -> Make a ocean level DONE
+-   [ ]      -> Make a waves
+-   [ ]          -> small
+-   [ ]          -> too much bigger
 -   [ ]  Include technical details and requirements.
 -   [ ]  Add testing and distribution plan.
 
