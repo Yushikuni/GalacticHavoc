@@ -10,6 +10,7 @@
 -   [ ]      -> Make a waves
 -   [ ]          -> small
 -   [ ]          -> too much bigger
+-   [ ]  Clean your project
 -   [ ]  Include technical details and requirements.
 -   [ ]  Add testing and distribution plan.
 
