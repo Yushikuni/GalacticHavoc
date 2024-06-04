@@ -57,8 +57,4 @@ void UBaseMenuWidget::InitializeMenu()
 
 	VerticalBox = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("Vertical Box"));
 	HorizontalBox->AddChild(VerticalBox);
-
-	
-	
-	//Border = 
 }
