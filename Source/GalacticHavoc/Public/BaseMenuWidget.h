@@ -17,13 +17,13 @@ class GALACTICHAVOC_API UBaseMenuWidget : public UUserWidget
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Menu")
-	void OpenMenu();
+	virtual void OpenMenu();
 
 	UFUNCTION(BlueprintCallable, Category = "Menu")
-	void CloseMenu();
+	virtual void CloseMenu();
 
 	UFUNCTION(BlueprintCallable, Category = "Menu")
-	void QuitGame();
+	virtual void QuitGame();
 
 	virtual void InitializeMenu();
 

@@ -33,7 +33,7 @@ void UBaseMenuWidget::NativeConstruct()
 void UBaseMenuWidget::InitializeMenu()
 {
 	UE_LOG(LogTemp, Warning, TEXT("InitializeMenu Called"));
-
+/*
 	Overlay = WidgetTree->ConstructWidget<UOverlay>(UOverlay::StaticClass(), TEXT("Overlay"));
 
 	UWidget* RootWidget = WidgetTree->RootWidget;
@@ -56,5 +56,31 @@ void UBaseMenuWidget::InitializeMenu()
 	Border->AddChild(HorizontalBox);
 
 	VerticalBox = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("Vertical Box"));
-	HorizontalBox->AddChild(VerticalBox);
+	HorizontalBox->AddChild(VerticalBox);*/
+
+	if (!WidgetTree) return;
+
+	if (!Overlay)
+	{
+		Overlay = WidgetTree->ConstructWidget<UOverlay>(UOverlay::StaticClass(), TEXT("Overlay"));
+		WidgetTree->RootWidget = Overlay;
+	}
+
+	if (!Border)
+	{
+		Border = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("Border"));
+		Overlay->AddChild(Border);
+	}
+
+	if (!HorizontalBox)
+	{
+		HorizontalBox = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("Horizontal Box"));
+		Border->AddChild(HorizontalBox);
+	}
+
+	if (!VerticalBox)
+	{
+		VerticalBox = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("Vertical Box"));
+		HorizontalBox->AddChild(VerticalBox);
+	}
 }
