@@ -12,7 +12,23 @@
 
 void UBaseMenuWidget::OpenMenu()
 {
-	this->AddToViewport();
+	this->AddToViewport(9999); // Nastavte vyšší Z-order hodnotu
+	UE_LOG(LogTemp, Warning, TEXT("Menu opened and added to viewport"));
+
+	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(this, 0);
+	if (PlayerController)
+	{
+		PlayerController->bShowMouseCursor = true;
+		FInputModeUIOnly InputMode;
+		InputMode.SetWidgetToFocus(TakeWidget());
+		PlayerController->SetInputMode(InputMode);
+		UE_LOG(LogTemp, Warning, TEXT("Mouse cursor enabled and input mode set to UI only"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("PlayerController not found"));
+	}
+
 }
 
 void UBaseMenuWidget::CloseMenu()
@@ -59,4 +75,16 @@ void UBaseMenuWidget::InitializeMenu()
 		VerticalBox = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("Vertical Box"));
 		HorizontalBox->AddChild(VerticalBox);
 	}
+
+	// Ujistìte se, že viditelnost je nastavena na Visible
+	Overlay->SetVisibility(ESlateVisibility::Visible);
+	Border->SetVisibility(ESlateVisibility::Visible);
+	HorizontalBox->SetVisibility(ESlateVisibility::Visible);
+	VerticalBox->SetVisibility(ESlateVisibility::Visible);
+
+	// Nastavte interaktivitu pro widgety
+	Overlay->SetIsEnabled(true);
+	Border->SetIsEnabled(true);
+	HorizontalBox->SetIsEnabled(true);
+	VerticalBox->SetIsEnabled(true);
 }
