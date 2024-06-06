@@ -33,30 +33,6 @@ void UBaseMenuWidget::NativeConstruct()
 void UBaseMenuWidget::InitializeMenu()
 {
 	UE_LOG(LogTemp, Warning, TEXT("InitializeMenu Called"));
-/*
-	Overlay = WidgetTree->ConstructWidget<UOverlay>(UOverlay::StaticClass(), TEXT("Overlay"));
-
-	UWidget* RootWidget = WidgetTree->RootWidget;
-	if (RootWidget == nullptr)
-	{
-		WidgetTree->RootWidget = Overlay;
-		RootWidget = Overlay;
-		UE_LOG(LogTemp, Warning, TEXT("Created new RootWidget as Overlay"));
-	}
-	else
-	{
-		Cast<UOverlay>(RootWidget)->AddChild(Overlay);
-		UE_LOG(LogTemp, Error, TEXT("RootWidget is not an Overlay"));
-	}
-
-	Border = WidgetTree->ConstructWidget<UBorder>(UBorder::StaticClass(), TEXT("Border"));
-	Overlay->AddChild(Border);
-
-	HorizontalBox = WidgetTree->ConstructWidget<UHorizontalBox>(UHorizontalBox::StaticClass(), TEXT("Horizontal Box"));
-	Border->AddChild(HorizontalBox);
-
-	VerticalBox = WidgetTree->ConstructWidget<UVerticalBox>(UVerticalBox::StaticClass(), TEXT("Vertical Box"));
-	HorizontalBox->AddChild(VerticalBox);*/
 
 	if (!WidgetTree) return;
 
