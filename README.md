@@ -3,6 +3,7 @@
 
 -   [ ]  Update course description.
 -   [ ]  Update course schedule.
+-   [ ]  Make this game in C++
 -   [ ]  Add game project specifications (rolling ball collecting coins).
 -   [ ]  Add a mechanic to change the ball into a spaceship.
 -   [ ]  Design a new level inspired by the movie Interstellar.
