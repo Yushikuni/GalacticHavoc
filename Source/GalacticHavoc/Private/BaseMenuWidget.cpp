@@ -12,7 +12,7 @@
 
 void UBaseMenuWidget::OpenMenu()
 {
-	this->AddToViewport(9999); // Nastavte vyšší Z-order hodnotu
+	this->AddToViewport(); // Nastavte vyšší Z-order hodnotu
 	UE_LOG(LogTemp, Warning, TEXT("Menu opened and added to viewport"));
 
 	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(this, 0);
