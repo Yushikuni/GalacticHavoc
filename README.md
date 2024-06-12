@@ -3,7 +3,7 @@
 
 -   [ ]  Update course description.
 -   [ ]  Update course schedule.
--   [ ]  Make this game in C++
+-   [ ]  Make this game in C++ + blueprint as a Toon tanks
 -   [ ]  Add game project specifications (rolling ball collecting coins).
 -   [ ]  Add a mechanic to change the ball into a spaceship.
 -   [ ]  Design a new level inspired by the movie Interstellar.
@@ -15,8 +15,34 @@
 -   [ ]  Include technical details and requirements.
 -   [ ]  Add testing and distribution plan.
 
+  - [ ] Add critical Features
+  - - - [ ] Coins 
+  - - - [ ] Transform to space ship
+  - - - [ ] UI
 * * * * *
+Design Document for Coin function
+---------------------------------------------
+Coins will be visible by shining and rotating
++  Why?
+ Player must see them, this is critical Feature, without this coins is not possible to finish this game
++ How?
+ Coin must be golden yellow and shining and rotating by Y axis
++ When?
+ In the beginging of the levels and coins will be showing the way into end of level
 
+ * * * * *
+Design Document for PickUp Coin function
+---------------------------------------------
+Coins must be pickable items.
++  Why?
+This is critical feature for the game. 
+Player must pick up 20 Coins to be able transform from ball to ship to be able to leave from enemy planet back to home.
+ + How?
+This Coint must be an actor and with overlaping function, player should be able to pick them up.
+ + When?
+Every time when coin will be overlaping with only player.
+
+* * * * *
 Design Document for Unreal Engine 5 L2 Course
 ---------------------------------------------
 
