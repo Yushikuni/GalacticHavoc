@@ -43,6 +43,26 @@ This Coint must be an actor and with overlaping function, player should be able 
 Every time when coin will be overlaping with only player.
 
 * * * * *
+Design Document for PopUp window
+---------------------------------------------
++ Why?
+This sloud give a summary of how much coins does player have
++ Where?
+This pop up window must be visible every time when player reach the end of level as a widget with option go to another level (continue) 
+or exith the game. If player choose exit the game, all coins shoudl be added to list of score in score screen. 
+When player want to play again, player will start with 0 coins and I can reapeat only level 1
++ When?
+In the end of every level
+
+
+
+* * * * *
+Design Document for 
+---------------------------------------------
+
+
+
+* * * * *
 Design Document for Unreal Engine 5 L2 Course
 ---------------------------------------------
 
