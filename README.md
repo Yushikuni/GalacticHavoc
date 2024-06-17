@@ -16,7 +16,7 @@
 -   [ ]  Add testing and distribution plan.
 
   - [ ] Add critical Features
-  - - - [ ] Coins 
+  - - - [X] Coins 
   - - - [ ] Transform to space ship
   - - - [ ] UI
 * * * * *
