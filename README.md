@@ -1,4 +1,4 @@
-# GalacticHavoc
+﻿# GalacticHavoc
 ### TODO List
 
 -   [ ]  Update course description.
@@ -19,6 +19,20 @@
   - - - [X] Coins 
   - - - [ ] Transform to space ship
   - - - [ ] UI
+* * * * *
+Project Hirachy
+---------------------------------------------
+Source/
+└── GalacticHavoc/
+    ├── BasePawn.cpp
+    ├── BasePawn.h
+    ├── Coin.cpp
+    ├── Coin.h
+    ├── GalacticHavocGameMode.cpp
+    ├── GalacticHavocGameMode.h
+    ├── GalacticHavocPlayerController.cpp
+    ├── GalacticHavocPlayerController.h
+
 * * * * *
 Design Document for Coin function
 ---------------------------------------------
