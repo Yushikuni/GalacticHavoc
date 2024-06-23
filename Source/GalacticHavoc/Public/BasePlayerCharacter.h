@@ -3,17 +3,20 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "GameFramework/Pawn.h"
+#include "Components/CapsuleComponent.h"
+
 #include "BasePlayerCharacter.generated.h"
 
 UCLASS()
-class GALACTICHAVOC_API ABasePlayerCharacter : public ACharacter
+class GALACTICHAVOC_API ABasePlayerCharacter : public APawn
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
 	ABasePlayerCharacter();
+	bool bAlive = true;
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,5 +28,15 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+private:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Base Pawn Toon")
+	class UCapsuleComponent* CapsuleComp;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Base Pawn Toon")
+	UStaticMeshComponent* BaseMesh;
+
+	UPROPERTY(Editanywhere, Category = "Combat")
+	TSubclassOf<class UCameraShakeBase> PawnDeathCameraShake;
 
 };

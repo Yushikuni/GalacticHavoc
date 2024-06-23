@@ -8,6 +8,15 @@ ABasePlayerCharacter::ABasePlayerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	// Making capsule component for collision
+	CapsuleComp = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Capsule Collider"));
+	
+	// Capsule component is a root component
+	RootComponent = CapsuleComp;
+
+	//Adding meshes and attachet them
+	BaseMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Base Mesh"));
+	BaseMesh->SetupAttachment(CapsuleComp);
 
 }
 
