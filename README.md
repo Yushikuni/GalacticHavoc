@@ -24,14 +24,16 @@ Project Hirachy
 ---------------------------------------------
 Source/
 └── GalacticHavoc/
-    ├── BasePawn.cpp
-    ├── BasePawn.h
-    ├── Coin.cpp
-    ├── Coin.h
-    ├── GalacticHavocGameMode.cpp
-    ├── GalacticHavocGameMode.h
-    ├── GalacticHavocPlayerController.cpp
-    ├── GalacticHavocPlayerController.h
+    ├── Private
+    ├──── BasePawn.cpp
+    ├──── Coin.cpp
+    ├──── GalacticHavocGameMode.cpp
+    ├──── GalacticHavocPlayerController.cpp
+    ├── Public
+    ├──── BasePawn.h
+    ├──── Coin.h
+    ├──── GalacticHavocGameMode.h
+    ├──── GalacticHavocPlayerController.h
 
 * * * * *
 Design Document for Coin function
