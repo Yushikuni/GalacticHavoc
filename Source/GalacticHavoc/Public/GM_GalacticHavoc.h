@@ -14,7 +14,8 @@ UCLASS()
 class GALACTICHAVOC_API AGM_GalacticHavoc : public AGameModeBase
 {
 	GENERATED_BODY()
-
+public:
+	AGM_GalacticHavoc();
 protected:
 	virtual void BeginPlay() override;
 	
