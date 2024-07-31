@@ -24,56 +24,21 @@
 * * * * *
 Project Hirachy
 ---------------------------------------------
-### Directory Details
-
-#### Private
-
-This directory contains the implementation (.cpp) files for the game:
-
-- **BasePawn.cpp**: Implementation of the BasePawn class, which is likely the base class for all pawn actors in the game.
-- **Coin.cpp**: Implementation of the Coin class, responsible for the game's coin objects.
-- **GalacticHavocGameMode.cpp**: Implementation of the game mode, defining the rules and flow of the game.
-- **GalacticHavocPlayerController.cpp**: Implementation of the player controller, handling player inputs and interactions.
-
-#### Public
-
-This directory contains the header (.h) files for the game:
-
-- **BasePawn.h**: Header file for the BasePawn class.
-- **Coin.h**: Header file for the Coin class.
-- **GalacticHavocGameMode.h**: Header file for the GalacticHavocGameMode class.
-- **GalacticHavocPlayerController.h**: Header file for the GalacticHavocPlayerController class.
-
-## Getting Started
-
-To get started with the GalacticHavoc project, follow these steps:
-
-1. **Clone the repository**:
-    ```bash
-    git clone <repository_url>
-    ```
-
-2. **Navigate to the project directory**:
-    ```bash
-    cd GalacticHavoc
-    ```
-
-3. **Build the project**:
-    Follow the instructions for your specific build system (e.g., CMake, Makefile, etc.).
-
-4. **Run the game**:
-    Execute the generated binary to start playing GalacticHavoc.
-
-## Contributing
-
-If you would like to contribute to the project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Create a pull request.
-
+Project Hirachy
+---------------------------------------------
+Source/
+└── GalacticHavoc/
+    ├── Private
+    ├──── BasePawn.cpp
+    ├──── Coin.cpp
+    ├──── GalacticHavocGameMode.cpp
+    ├──── GalacticHavocPlayerController.cpp
+    ├── Public
+    ├──── BasePawn.h
+    ├──── Coin.h
+    ├──── GalacticHavocGameMode.h
+    ├──── GalacticHavocPlayerController.h 
+    
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
