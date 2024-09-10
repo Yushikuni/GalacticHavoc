@@ -1,5 +1,3 @@
-# I'll create the content for the markdown file based on the given structure
-readme_content = """
 # GalacticHavoc
 
 **GalacticHavoc** je vesmírná střílečka vytvořená v Unreal Engine 5. Hráč začíná jako koule, a pak nastane změna, kde se změní za vesmírnou loď
